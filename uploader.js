@@ -18,9 +18,7 @@ define([
         filesContributed++;
 
         if (filesContributed === filesRequested){
-            modalPopup.modal({
-                show: false
-            });
+            modalPopup.modal("hide");
             filesContributed = 0;
             filesRequested = 0;
         }
