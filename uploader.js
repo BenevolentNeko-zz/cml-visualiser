@@ -1,14 +1,13 @@
 define([
-	"text!./menu.html"
-], function(template){
+	"text!./menu.html",
+    "./menu"
+], function(template, menu){
     
     $("body").append(template);
-    $("body").on("NEW_FILE", function(){
-        console.log(111);
-    })
     var modalPopup = $("#modalPopup");
     var uploader = $("#uploader");
-    var menu = $("#menu");
+    var menuNode = $("#menu");
+    menu.setDomNode(menuNode);
     
     var filesRequested = 0;
     var filesContributed = 0;
