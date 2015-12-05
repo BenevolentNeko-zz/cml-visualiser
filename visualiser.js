@@ -125,8 +125,7 @@ define(["./CPK", "./menu"], function (CPK, menu) {
 			var bonds = cml.bonds;
             
             this.addLinesToScene(bonds, particleGroup);
-            menu.addItem(fileName, bonds, particleGroup, this.addLinesToScene.bind(this));
-
+            menu.addItem(fileName, bonds, particleGroup, this.addLinesToScene.bind(this), atoms, this.createNewParticleGroup, this.scene);
 		},
 
 		_parseCML: function ( text ) {
