@@ -15,8 +15,8 @@ define([], function(){
                 if (!button.hasClass("active")){
                     button.addClass("active");
                     removeFunctions[fileName] = addLinesToScene(bonds, particleGroup, {
-                        color: 0xFFFF00, 
-                        linewidth: 10
+                        color: 0x00cc00,
+                        linewidth: 20
                     });
                 } else {
                     button.removeClass("active");
